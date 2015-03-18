@@ -1,4 +1,4 @@
-﻿define(['durandal/system', 'knockout'], function(system, ko) {
+﻿define(['plugins/router', 'durandal/system', 'knockout'], function(router, system, ko) {
     var firstVm = ko.observable();
 
     var vm = {
@@ -6,6 +6,7 @@
         title:'First Tab',
         deactivate:deactivate,
         firstVm:firstVm,
+		router: router.activeItem().router
     };
 
     return vm;

@@ -1,4 +1,5 @@
 ﻿<div>
     <h4><span data-bind="text: firstVm().name" /></h4>
     <h5>Master Id <span data-bind="text: firstVm().id" /></h5>
+    <a data-bind="attr: { href: router.convertRouteToHash('second') }, text: 'My href url is: ' + router.convertRouteToHash('second')"></a>
 </div>
